@@ -7,16 +7,15 @@ function adicionarItem(){
         dadosItens.push(Item);
         console.log(dadosItens);
         criarLista();
-        document.getElementById('Item').value = "";
+        document.getElementById('Item').value="";
     }else{
         alert("Nenhum item foi adicionado!")
     }
 }
 
 function criarLista(){
-    let tabela = "<tr><td></td></tr>";
     for(let i = 0;i<=(dadosItens.length-1);i++){
-        tabela =+ "<tr><td>" + dadosItens[i] + "</td></tr>"
+        tabela =+ "<tr><th>" + dadosItens+ "</th><th></th></tr>";
         document.getElementById('tabela').innerHTML = tabela;
     }
 }

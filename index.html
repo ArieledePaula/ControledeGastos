@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Gastos</title>
     <script src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <div>
-            <h1>Controle de Gastos</h1>
+            <h1 style="text-align: center;">Controle de Gastos</h1>
             <nav>
                 <a href="#alimentacao">Alimentação</a>
                 <a href="#transporte">Transporte</a>
@@ -23,12 +24,12 @@
         <h2>Alimentação</h2>
         <label for="">Adicionar Item:</label>
         <input type="text" id="Item">
-        <button type="button" onclick="adicionarItem()">Adicionar</button>
+        <button  type="button" class="btn btn-dark" onclick="adicionarItem()">Adicionar</button>
         <div>
-            <div class="container"></div>
-            <table id="tabela"></table>
+            <div style="margin-top: 20px;" class="container"></div>
+            <table  class="table table-striped" id="tabela"></table>
             <tr>
-                <td></td>
+                <th></th>
             </tr>
         </div>
     </main>
