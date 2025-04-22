@@ -6,32 +6,25 @@
     <title>Controle de Gastos</title>
     <script src="main.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1 style="text-align: center;">Controle de Gastos</h1>
-            <nav>
-                <a href="#alimentacao">Alimentação</a>
-                <a href="#transporte">Transporte</a>
-                <a href="#lazer">Lazer</a>
-                <a href="#faculdade">Faculdade</a>
-            </nav>
-        </div>
+    <header>           
+        <h1 style="text-align: center;">Controle de Gastos</h1>                       
     </header>
-    <main>
-        <section id="alimentacao" class="gastos"></section>
-        <h2>Alimentação</h2>
-        <label for="">Adicionar Item:</label>
-        <input type="text" id="Item">
-        <button  type="button" class="btn btn-dark" onclick="adicionarItem()">Adicionar</button>
-        <div>
-            <div style="margin-top: 20px;" class="container"></div>
-            <table  class="table table-striped" id="tabela"></table>
+    <div class="container">
+        <label for="">Adicionando Categorias</label>
+        <input type="text" class="form-control" name="" id="Categoria">
+        <button style="margin-top:20px;" type="button" class="btn btn-dark" onclick="adicionarCategoria()" >Salvar
+        </button>
+    </div>
+
+    <div  style="margin-top: 20px;" class="container">
+        <table class="table table-striped" id="tabela">
             <tr>
-                <th></th>
+                <th>Categoria</th>
             </tr>
-        </div>
-    </main>
+        </table>
+    </div>
 </body>
 </html>
