@@ -23,7 +23,7 @@
         <table class="table table-striped" id="tabela">
             <thead>
                 <tr>
-                    <th>Categorias</th>
+                    <th>Adicionar</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,6 +37,27 @@
             <input type="text" class="form-control" id="Item">
         </div>
         
-    
+        <div class="mb-2">
+            <label for="Preco" class="form-label">Preço</label>
+            <input type="number" class="form-control" id="Preco">
+        </div>
+        <button style="margin-top:20px;" type="button" class="btn btn-dark" onclick="adicionarItem()">Salvar</button>
+    </div>
+
+    <div  style="margin-top: 20px;" class="container">
+        <table class="table table-striped" id="tabela1">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <div class="container" style="margin-top: 20px;" id="total-gastos">
+        </div>
 </body>
 </html>
