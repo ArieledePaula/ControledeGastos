@@ -15,32 +15,35 @@ function adicionarCategoria(){
 
 
 function criarCategoria(){
-    let tabela = "<tr><td>Nome</td><td>Ações</td></tr>";
+    let tabela = "<tr><td></td></tr>";
     for(let i =0;i<=(dadosCategoria.length-1); i++){
-        tabela += "<tr><td>" + dadosCategoria[i] + "</td></tr>";
+        tabela += "<tr><td>" + dadosCategoria[i] +  "</td></tr>";
         document.getElementById('tabela').innerHTML = tabela;
     }
 }
 
-var dadosItens= [];
+var dadosItem = [];
 
 function adicionarItem(){
-    let Item =document.getElementById('Item').value;
+    let Item = document.getElementById('Item').value;
 
     if(Item){
-        dadosItens.push(Item);
-        console.log(dadosItens);
-        criarLista();
-        document.getElementById('Item').value="";
+        dadosItem.push(Item);
+        console.log(dadosItem);
+        criarItem();
+        document.getElementById('Item').value = "";
     }else{
-        alert("Nenhum item foi adicionado!")
+        alert("Nenhum Item foi adicionado!")
     }
 }
 
 
-function criarLista(){
-    for(let i = 0;i<=(dadosItens.length-1);i++){
-        tabela =+ "<tr><th>" + dadosItens+ "</th><th></th></tr>";
-        document.getElementById('tabela').innerHTML = tabela;
+function criarItem(){
+    let tabela1 = "<tr><td></td></tr>";
+    for(let i =0;i<=(dadosItem.length-1); i++){
+        tabela1 += "<tr><td>" + dadosItem[i] +  "</td></tr>";
+        document.getElementById('tabela1').innerHTML = tabela1;
     }
 }
+
+

@@ -12,17 +12,32 @@
     <header>           
         <h1 style="text-align: center;">Controle de Gastos</h1>                       
     </header>
+
     <div class="container">
-        <label for="">Adicionando Categorias</label>
-        <input type="text" class="form-control" name="" id="Categoria">
-        <button style="margin-top:20px;" type="button" class="btn btn-dark" onclick="adicionarCategoria()" >Salvar
-        </button>
+        <label style="margin-top: 20px;" for="Categoria">Categoria</label>
+        <input type="text" class="form-control mb-2"  id="Categoria">
+
+        <button style="margin-top:20px;" type="button" class="btn btn-dark" onclick="adicionarCategoria()" >Salvar</button>
+       
     </div>
 
     <div  style="margin-top: 20px;" class="container">
         <table class="table table-striped" id="tabela">
             <tr>
-                <th>Categoria</th>
+                
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+    <label style="margin-top: 20px;" for="">Adicionando Itens</label>
+        <input type="text" class="form-control" name="" id="Item">
+        <button style="margin-top:20px;" type="button" class="btn btn-dark" onclick="adicionarItem()">Salvar</button>
+    </div>
+    <div  style="margin-top: 20px;" class="container">
+        <table class="table table-striped" id="tabela1">
+            <tr>
+                
             </tr>
         </table>
     </div>
